@@ -1,0 +1,205 @@
+.header-banner{
+    color: #526F89;
+    background-color: #E8F8FF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    padding: 20px 0px 19px 0px;
+    text-align: center;
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.header-banner__text{
+    @media (max-width: 767px) {
+        font-size: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #DBDBDB;
+    @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 1399px) {
+        margin-bottom: 60px;
+    }
+}
+
+.nav-list{
+    color: #212326;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    display: flex;
+    gap: 49px;
+    align-items: center;
+    position: relative;
+    @media (max-width: 1399px) {
+        gap: 20px;
+    }
+}
+
+.nav-list__item{
+    @media (max-width: 767px) {
+        font-size: 24px;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #DBDBDB;
+    }
+}
+
+.nav-list__link{
+    color: #263238;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    @media (max-width: 767px) {
+        font-size: 24px;
+        padding: 5px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.nav__list--opened{
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        top: 235px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 25px;
+        z-index: 10;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+}
+
+.nav__list--closed{
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.nav-list__button{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    border-radius: 89px;
+    background: linear-gradient(277deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
+    padding: 18px 46px 19px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+        padding: 18px 46px 19px;
+        font-size: 24px;
+    }
+}
+
+.header__line{
+    width: 1440px;
+    margin-bottom: 122px;
+}
+
+
+.contacts__list{
+    position: relative;
+}
+
+.nav-list__arrow:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 135px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+    @media (max-width: 1399px) {
+        left: 105px;
+    }
+    @media (min-width: 1400px) {
+        left: 135px;
+    }
+}
+
+.nav-list__arrow:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 231px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+    @media (max-width: 1399px) {
+        left: 173px;
+    }
+    @media (min-width: 1400px) {
+        left: 232px;
+    }
+}
+
+.nav__button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../../../images/burger.svg);
+    border: 0;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.nav__button--opened{
+    background-image: url(../../../images/close.svg);
+}
+
+.nav__button--closed{
+    background-image: url(../../../images/burger.svg);
+}

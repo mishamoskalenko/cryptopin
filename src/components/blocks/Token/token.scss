@@ -1,0 +1,67 @@
+.token__title{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+    text-align: center;
+    position: relative;
+    @media (max-width: 1399px) {
+        font-size: 60px;
+    }
+    @media (max-width: 767px) {
+        font-size: 40px;
+    }
+}
+
+.token{
+    padding: 0px;
+}
+
+.token__title::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/token-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 132.509px;
+    height: 132.509px;
+    top: -3px;
+    left: 70px;
+    @media (max-width: 1449px) {
+        display: none;
+    }
+}
+
+.token__title::after{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/token-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 346px;
+    height: 272px;
+    top: -80px;
+    right: -20px;
+    @media (max-width: 1449px) {
+        display: none;
+    }
+}
+
+.token__description{
+    color: #797979;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    max-width: 670px;
+    margin: 0px auto 67px auto;
+}

@@ -1,0 +1,64 @@
+.story__title{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
+.story__title--story{
+    background: linear-gradient(99deg, #31E5FF 10.8%, #448FFF 43.56%, #FF82BE 75.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
+.story__subtitle{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
+.story__description{
+    color: #797979;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    max-width: 549px;
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
+.story__image{
+    margin-bottom: 143px;
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}

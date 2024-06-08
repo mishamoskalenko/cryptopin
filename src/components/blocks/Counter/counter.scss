@@ -1,0 +1,113 @@
+.counter{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 172px;
+    @media (max-width: 1399px) {
+        padding: 43px 30px;
+        margin-bottom: 90px;
+    }
+    @media (max-width: 767px) {
+        padding: 43px 30px;
+        margin-bottom: 45px;
+    }
+}
+
+.counter-list{
+    padding: 83px 58px;
+    border-radius: 30px;
+    background: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 1399px) {
+        padding: 43px 38px;
+        gap: 22px;
+    }
+}
+
+.counter-list__item{
+    @media (max-width: 767px) {
+        padding-bottom: 22px;
+        width: 100%;
+    }
+}
+
+.counter-list__item:nth-child(1){
+    @media (max-width: 767px) {
+        border-bottom: 1px solid #7782FF;
+    }
+    @media (min-width: 1400px) {
+        border-right: 1px solid #7782FF;
+        padding-right: 70px;
+    }
+}
+
+.counter-list__item:nth-child(2){
+    @media (max-width: 767px) {
+        border-bottom: 1px solid #FF5196;
+    }
+    @media (min-width: 1400px) {
+        border-right: 1px solid #FF5196;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.counter-list__item:nth-child(3){
+    @media (max-width: 767px) {
+        border-bottom: 1px solid #FFB04E;
+    }
+    @media (max-width: 1399px) {
+    }
+    @media (min-width: 1400px) {
+        border-right: 1px solid #FFB04E;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.counter-list__item:nth-child(4){
+    @media (max-width: 767px) {
+        border-bottom: 1px solid #27CAEA
+    }
+    @media (min-width: 1400px) {
+        border-right: 1px solid #27CAEA;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.counter-list__item:nth-child(5){
+    @media (min-width: 768px) {
+        border-top: 1px solid #7782FF;
+        width: 100%;
+    }
+    @media (min-width: 1400px) {
+        border-top: 0px solid #7782FF;
+        padding-left: 38px;
+        width: auto;
+    }
+}
+
+.counter-item__header{
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+}
+
+.counter-item__description{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}

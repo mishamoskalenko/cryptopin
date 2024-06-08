@@ -1,0 +1,44 @@
+.team{
+    margin-bottom: 115px;
+    @media (max-width: 1399px) {
+        margin-bottom: 57.5px;
+    }
+}
+
+.team__header{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 46px;
+    @media (max-width: 1399px) {
+        font-size: 30px;
+    }
+}
+
+.team__header--team{
+    background: linear-gradient(100deg, #FF75AC 9.19%, #9EA6FF 44.75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    @media (max-width: 1399px) {
+        font-size: 30px;
+    }
+}
+
+.team__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}

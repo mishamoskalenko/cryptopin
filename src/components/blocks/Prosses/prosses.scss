@@ -1,0 +1,171 @@
+.prosses{
+    background-color: #EEF2F3;
+    padding: 167px 0px 167px 0px;
+    @media (max-width: 767px) {
+        padding: 80px 0px 0px 0px;
+    }
+}
+
+.prosses__header{
+    color: #212326;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 77px;
+    max-width: 466px;
+    margin: 0px auto 77px;
+    @media (max-width: 767px) {
+        font-size: 30px;
+        margin-bottom: 143px;
+    }
+}
+
+.prosses-list-item__header--1:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/prosses-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 102px;
+    height: 102px;
+    left: -120px;
+    @media (max-width: 767px) {
+        top: -110px;
+        left: 70px;
+    }
+}
+
+.prosses-list-item__header--2:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/prosses-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 102px;
+    height: 102px;
+    left: -120px;
+    @media (max-width: 767px) {
+        top: -110px;
+        left: 70px;
+    }
+}
+
+.prosses-list-item__header--3:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/prosses-3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 102px;
+    height: 102px;
+    left: -120px;
+    @media (max-width: 767px) {
+        top: -110px;
+        left: 70px;
+    }
+}
+
+.prosses__header--crypto{
+    background: linear-gradient(99deg, #31E5FF 17.85%, #448FFF 43.56%, #FF82BE 75.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.prosses-list-item__header{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.prosses-list-item__description{
+    color: #797979;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 542px;
+    @media (max-width: 767px) {
+        margin-bottom: 142px;
+    }
+}
+
+.prosses-list-item__description--1{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D4D5D6;
+}
+
+.prosses-list-item__description--2{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D4D5D6;
+}
+
+.prosses-list-item__description--3{
+    padding-bottom: 40px;
+    @media (max-width: 767px) {
+        padding-bottom: 0px;
+    }
+}
+
+.prosses__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 216px;
+    @media (max-width: 1750px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 116px;
+    }
+}
+
+.prosses__image{
+    position: relative;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.prosses__image img{
+    width: auto;
+}
+
+.prosses__image:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/prosses-chart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 283px;
+    height: 353px;
+    top: 405px;
+    left: -79px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    @media (max-width: 980px) {
+        display: none;
+    }
+}
+
+.prosses-list{
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}

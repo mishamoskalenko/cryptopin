@@ -1,0 +1,317 @@
+.about{
+    background-color: #EAEEF18C;
+}
+
+.about__wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 85px;
+    margin: 0 auto;
+    padding: 172px 0px 172px 0px;
+    @media (max-width: 1599px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 767px) {
+        padding: 72px 30px 72px 30px;
+    }
+}
+
+.about__header{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    padding-bottom: 27px;
+    @media (max-width: 1599px) {
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1599px) {
+        max-width: 468px;
+    }
+}
+
+.about__header--cryptop{
+    color: #FF82BE;
+}
+
+.about__description{
+    color: #797979;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    @media (max-width: 1599px) {
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    @media (min-width: 1599px) {
+        max-width: 549px;
+    }   
+}
+
+.about-list{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 26px;
+    @media (max-width: 1599px) {
+        justify-content: center;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
+
+.about-list__item {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+    border-radius: 300px;
+    position: relative;
+}
+
+.about-list__item--support{
+    color: #C5819C;
+    background: #FFE1ED;
+    width: 194px;
+    padding: 18px 21px 18px 59px;
+}
+
+.about-list__item--secured{
+    color: #C5819C;
+    background: #AAF1FF;
+    width: 191px;
+    padding: 18px 21px 18px 55px;
+}
+
+.about-list__item--support:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/support.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    left: 15px;
+}
+
+
+.about-list__item--secured:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/secure.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    left: 15px;
+}
+
+.about__button{
+    color: #212326;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    padding: 28px 62px 29px 62px;
+    border-radius: 89px;
+    background: #FFF;
+    cursor: pointer;
+    @media (max-width: 1599px) {
+        position:relative;
+        left:35%;
+    }    
+    @media (max-width: 767px) {
+        position:relative;
+        left: 10%;
+    }
+}
+
+.chart{
+    border-radius: 37px;
+    background: #FFF;
+    margin-left: 94px;
+    margin-top: 86px;
+    padding: 38px 62px 17px 32px;
+    position: relative;
+    z-index: 10;
+    transform-style: preserve-3d;
+    @media (max-width: 1599px) {
+        margin-left: 0px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.chart-list{
+    position: relative;
+}
+
+.chart-item--1:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/chart-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 497px;
+    height: 1px;
+    top: 86px;
+}
+
+.chart-item--2:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/chart-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 497px;
+    height: 1px;
+    top: 193px;
+}
+
+.chart-item--3:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/chart-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 497px;
+    height: 1px;
+    top: 300px;
+}
+
+.chart:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/chart-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateZ(-1px);
+    z-index: 2;
+    width: 766px;
+    height: 531px;
+    top: -76px;
+    left: -94px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.chart-buttons{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40.5px;
+    border-radius: 12px;
+}
+
+.chart-buttons__item{
+    border-radius: 12px;
+    background: #F4F4F4;
+    padding: 4.5px 18px;
+}
+
+.chart-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 41px;
+}
+
+.chart-item__header{
+    color: #35527E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+
+.chart-item__description{
+    color: #35527E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; 
+    text-transform: capitalize;
+}
+
+.chart-item__image{
+    margin-right: 18px;
+}
+
+.chart-buttons__button{
+    color: #35527E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.chart-item__text--1{
+    margin-right: 70px;
+}
+
+.chart-item__text--2{
+    margin-right: 95px;
+}
+
+.chart-item__text--3{
+    margin-right: 72px;
+}
+
+.chart-item__text--4{
+    margin-right: 129px;
+}
+
+.chart-item__price{
+    margin-right: 64px;
+    color: #212326;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.chart-item__change{
+    color: #3EBA59;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}

@@ -1,0 +1,253 @@
+.stock{
+    background-repeat: no-repeat;
+    background-image: url(../../../images/product-background.png);
+    padding: 128px 97px 690px 91px;
+    display: flex;
+    align-items: center;
+    gap: 153px;
+}
+
+.stock-list{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.stock-list__item{
+    color: #263238;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    border-radius: 89px;
+    background: #FFF;
+    position: relative;
+}
+
+.stock-list__item--1{
+    padding: 16px 39px 20px 58px;
+}
+
+.stock-list__item--2{
+    padding: 16px 24px 20px 58px;
+    border-radius: 89px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.stock-list__item--3{
+    padding: 16px 34px 20px 58px;
+    border-radius: 89px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.stock-list__item--1:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/stock-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 24px;
+    height: 25px;
+    left: 25px;
+}
+
+.stock-list__item--2:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/stock-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 24px;
+    height: 32px;
+    left: 25px;
+    top: 10px;
+}
+
+.stock-list__item--3:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/stock-3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 36px;
+    height: 27px;
+    left: 15px;
+}
+
+.product{
+    margin-bottom: 159px;
+    padding: 0;
+    @media (max-width: 1452px) {
+        display: none;
+    }
+}
+
+.product-sub{
+    display: flex;
+    gap: 396px;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+.product-sub__description{
+    color: #263238;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.product-sub__button{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    padding: 28px 62px 29px;
+    border-radius: 89px;
+    background: linear-gradient(277deg, #25F6FF -15.2%, #7782FF 55.76%, #FF5196 113.69%);
+}
+
+.stock__header{
+    color: #212326;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+}
+
+.stock__description{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.invest{
+    border-radius: 50px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 1px 22px 48px 0px rgba(17, 17, 17, 0.25);
+    margin: 0 auto;
+    margin-top: -607px;
+    width: 1148px;
+}
+
+.invest-buttons{
+    padding: 30px 45.8px 43px;
+}
+
+.invest-buttons__list{
+    display: flex;
+    gap: 9px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.invest-buttons__list:before{
+    content: "";
+    position: absolute;
+    background-image: url(../../../images/invest-line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    width: 1147px;
+    height: 1px;
+    left: -45px;
+    top: 48px;
+}
+
+.invest__wrapper{
+    display: flex;
+    gap: 85px;
+    align-items: center;
+    padding: 0px 71px 95px 64px;
+}
+
+.invest-text__subtitle{
+    color: #C0945E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+    border-radius: 31px;
+    background: #FFE8CC;
+    width: 210px;
+}
+
+.invest-text__percent{
+    color: #212326;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+
+.invest-text__rate{
+    color: #555FE7;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.invest-text__wrapper{
+    display: flex;
+    gap: 7px;
+    align-items: flex-end;
+}
+
+.invest-text__button{
+    color: #212326;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.7%;
+    text-transform: capitalize;
+    border-radius: 89px;
+    background: #F3F3F3;
+    padding: 25px 51px 26px;
+    cursor: pointer;
+}
+
+.invest-text__description{
+    color: #797979;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.product{
+    @media (max-width: 1452px) {
+        display: none;
+    }
+}
