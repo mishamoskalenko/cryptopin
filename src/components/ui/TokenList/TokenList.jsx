@@ -2,37 +2,45 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import TokenItem from '../TokenItem/TokenItem'
 import './tokenlist.scss'
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import SkeletonTokenItem from '../SkeletonTokenItem/SkeletonTokenItem';
 
 const API_URL = 'https://api.coincap.io/v2/assets';
-const CRYPTO_SYMBOLS = ['bitcoin', 'ethereum', 'tether', 'usd-coin', 'binance-coin', 'cardano', 'ripple', 'dogecoin', 'litecoin', 'not-a-token'];
+const CRYPTO_SYMBOLS = ['bitcoin', 'ethereum', 'tether', 'usd-coin', 'binance-coin', 'cardano', 'xrp', 'dogecoin', 'litecoin'];
 
 function TokenList() {
-    const [tokens, setTokens] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [tokens, setTokens] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     const fetchToken = async () => {
         try {
-            setIsLoading(true);
-            const response = await axios.get(API_URL, {
-                params: {
-                    limit: 100,
-                },
-            });
-            const data = response.data.data.filter(token => CRYPTO_SYMBOLS.includes(token.id));
-            setTokens(data);
-            setIsLoading(false);
-        } catch (error) {
-            console.error('Error fetching token data:', error);
-            setIsLoading(false);
+            setIsLoading(true)
+            const response = await axios.get(API_URL)
+            const data = response.data.data.filter(token => CRYPTO_SYMBOLS.includes(token.id))
+            console.log(data)
+            setTokens(data)
+            setIsLoading(false)
         }
-    };
-    
+        catch (error) {
+            console.error(error)
+            setIsLoading(false)
+        }
+    }
+
     useEffect(() => {
-        fetchToken()
+        fetchToken();
     }, [])
 
+    const changeColor = (change) => {
+        if (change > 0) {
+            return 'tokenitem-item__change--positive';
+        }
+        else if (change < 0) {
+            return 'tokenitem-item__change--negative';
+        }
+        else {
+            return 'tokenitem-item__change--neutral';
+        }
+    }
 
     const getTokenImage = (symbol) => {
         switch (symbol) {
@@ -193,60 +201,32 @@ function TokenList() {
         }
     };
 
-    const getChangeClass = (change) => {
-        if (change > 0) {
-            return 'tokenitem-item__change--positive';
-        }
-
-        else if (change < 0) {
-            return 'tokenitem-item__change--negative';
-        }
-        else {
-            return 'tokenitem-item__change--neutral';
-        }
-
-    }
+    const SkeletonToken = Array.from({ length: 9 }, (_, index) => index);
 
     return (
-    <>
-        {isLoading ? (
-            Array.from({ length: 10 }).map((_, index) => (
-                <div key={index} className="tokenitem">
-                    <ul className='tokenitem__list tokenitem-list'>
-                        <div className='tokenitem-list__name'>
-                            <Skeleton className="tokenitem-item tokenitem-item__image" circle={true} height={40} width={40} />
-                            <Skeleton className="tokenitem-item tokenitem-item__title" width={37} />
-                            <Skeleton className="tokenitem-item tokenitem-item__description" width={65} />
-                        </div>
-                        <Skeleton className='tokenitem-item tokenitem-item__price' width={110} />
-                        <Skeleton className='tokenitem-item tokenitem-item__change' width={59} />
-                        <Skeleton className='tokenitem-item tokenitem-item__volume' width={110} />
-                        <Skeleton className='tokenitem-item tokenitem-item__cap' width={108} />
-                        <Skeleton className='tokenitem-item tokenitem-item__detail' width={44} />
-                    </ul>
-                </div>
-            ))
-        ) : (
-            tokens.map(token => (
-                <TokenItem
-                    id={token.id}
-                    key={token.id}
-                    image={getTokenImage(token.symbol)}
-                    title={token.symbol.toUpperCase()}
-                    description={`(${token.name})`}
-                    price={`$${parseFloat(token.priceUsd).toFixed(2)}`}
-                    change={`${parseFloat(token.changePercent24Hr).toFixed(2)}%`}
-                    volume={`$${parseFloat(token.volumeUsd24Hr).toFixed(0)}`}
-                    cap={`$${parseFloat(token.marketCapUsd).toFixed(0)}`}
-                    changeColor={getChangeClass(parseFloat(token.changePercent24Hr))}
-                />
-            ))
-        )}
-    </>
-);
+        <>
+            {isLoading ? (
+                SkeletonToken.map((token) => (
+                    <SkeletonTokenItem key={token} />
+                ))
+            ) : (
+                tokens.map(token => (
+                    <TokenItem
+                        id={token.id}
+                        key={token.id}
+                        image={getTokenImage(token.symbol)}
+                        title={token.symbol}
+                        description={`(${token.name})`}
+                        price={`$${parseFloat(token.priceUsd).toFixed(2)}`}
+                        change={`${parseFloat(token.changePercent24Hr).toFixed(2)}%`}
+                        volume={`$${parseFloat(token.volumeUsd24Hr).toFixed(0)}`}
+                        cap={`$${parseFloat(token.marketCapUsd).toFixed(0)}`}
+                        changeColor={changeColor(token.changePercent24Hr)}
+                    />
+                ))
+            )}
+        </>
+    );
 }
 
 export default TokenList
-
-
-
