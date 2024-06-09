@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptopin/static/css/main.cf755310.css",
-    "main.js": "/cryptopin/static/js/main.fa4979f8.js",
+    "main.js": "/cryptopin/static/js/main.227b0b08.js",
     "static/media/newslatter-background.png": "/cryptopin/static/media/newslatter-background.651d0cf11d2a48e859f1.png",
     "static/media/product-background.png": "/cryptopin/static/media/product-background.c6062908c0ea3e9dda18.png",
     "static/media/token-2.svg": "/cryptopin/static/media/token-2.dc770cf9a30afb7ed9ba.svg",
@@ -84,10 +84,10 @@
     "static/media/invest-line.svg": "/cryptopin/static/media/invest-line.2e10f1815373943d6635.svg",
     "static/media/chart-line.svg": "/cryptopin/static/media/chart-line.9d5f7e0425fc4cfb16c3.svg",
     "main.cf755310.css.map": "/cryptopin/static/css/main.cf755310.css.map",
-    "main.fa4979f8.js.map": "/cryptopin/static/js/main.fa4979f8.js.map"
+    "main.227b0b08.js.map": "/cryptopin/static/js/main.227b0b08.js.map"
   },
   "entrypoints": [
     "static/css/main.cf755310.css",
-    "static/js/main.fa4979f8.js"
+    "static/js/main.227b0b08.js"
   ]
 }
