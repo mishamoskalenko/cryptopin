@@ -5,11 +5,19 @@ import bannerRating from "../../../images/banner-rating.jpg"
 import ratingStart from "../../../images/rating-starts.svg"
 import { Link } from 'react-router-dom';
 
+let date = new Date()
+
+const formattedDate = date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: '2-digit',
+    year: 'numeric'
+});
+
 function Banner() {
     return (
         <section className='banner'>
             <div className='wrapper'>
-                <div className='banner__info'>Updated on May 03, 2024 </div>
+                <div className='banner__info'>Updated on {formattedDate}</div>
                 <h1 className='banner__header'>Build Wealth <b className='banner__header--auto'>Automatically</b> With Crypto</h1>
                 <p className='banner__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
                 <Link className='banner__button' to={`/token`}>Get Started</Link>

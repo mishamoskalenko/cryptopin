@@ -8,7 +8,9 @@ function TokenItem(props) {
         <div className="tokenitem">
             <ul className='tokenitem__list tokenitem-list'>
                 <div className='tokenitem-list__name'>
-                    <li className='tokenitem-item tokenitem-item__image'>{props.image}</li>
+                    <li className='tokenitem-item tokenitem-item__image'>
+                        <img className='tokenitem-item tokenitem-item__image' src={props.image} alt={props.id} />
+                    </li>
                     <li className='tokenitem-item tokenitem-item__title'>{props.title}</li>
                     <li className='tokenitem-item tokenitem-item__description'>{props.description}</li>
                 </div>
