@@ -12,6 +12,7 @@ function TokenList() {
     const [isLoading, setIsLoading] = useState(false)
 
     function fetchToken() {
+        setIsLoading(true);
         axios.get(API_URL, {
             params: {
                 vs_currency: 'usd',
@@ -19,7 +20,6 @@ function TokenList() {
             }
         })
             .then(response => {
-                console.log(response.data);
                 const data = response.data.filter(token => CRYPTO_SYMBOLS.includes(token.id));
                 setTokens(data);
                 setIsLoading(false);
