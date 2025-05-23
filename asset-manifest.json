@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cryptopin/static/css/main.e3851172.css",
-    "main.js": "/cryptopin/static/js/main.73ab2adf.js",
+    "main.css": "/cryptopin/static/css/main.3a511c5e.css",
+    "main.js": "/cryptopin/static/js/main.d4dcbaf0.js",
     "static/media/newslatter-background.png": "/cryptopin/static/media/newslatter-background.651d0cf11d2a48e859f1.png",
     "static/media/product-background.png": "/cryptopin/static/media/product-background.c6062908c0ea3e9dda18.png",
     "static/media/token-2.svg": "/cryptopin/static/media/token-2.dc770cf9a30afb7ed9ba.svg",
@@ -72,7 +72,6 @@
     "static/media/secure.svg": "/cryptopin/static/media/secure.f3fa9d4cea0ca0b85929.svg",
     "static/media/whyus-background-2.svg": "/cryptopin/static/media/whyus-background-2.123f1cd78bc6ab8f3952.svg",
     "static/media/close.svg": "/cryptopin/static/media/close.6430a848ecf80c96256c.svg",
-    "static/media/nav-arrow.svg": "/cryptopin/static/media/nav-arrow.cbf3c38d8ab22e12b239.svg",
     "static/media/support.svg": "/cryptopin/static/media/support.ab3f4bee972a26d3325d.svg",
     "static/media/chart-1.svg": "/cryptopin/static/media/chart-1.5e4b2e25fc59c94816ba3030527cb2f6.svg",
     "static/media/chart-3.svg": "/cryptopin/static/media/chart-3.fd8ed50e1253cd25eef3b46289b8f8a5.svg",
@@ -83,11 +82,11 @@
     "static/media/banner-line.svg": "/cryptopin/static/media/banner-line.43fa08f56468b4526478.svg",
     "static/media/invest-line.svg": "/cryptopin/static/media/invest-line.2e10f1815373943d6635.svg",
     "static/media/chart-line.svg": "/cryptopin/static/media/chart-line.9d5f7e0425fc4cfb16c3.svg",
-    "main.e3851172.css.map": "/cryptopin/static/css/main.e3851172.css.map",
-    "main.73ab2adf.js.map": "/cryptopin/static/js/main.73ab2adf.js.map"
+    "main.3a511c5e.css.map": "/cryptopin/static/css/main.3a511c5e.css.map",
+    "main.d4dcbaf0.js.map": "/cryptopin/static/js/main.d4dcbaf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3851172.css",
-    "static/js/main.73ab2adf.js"
+    "static/css/main.3a511c5e.css",
+    "static/js/main.d4dcbaf0.js"
   ]
 }
