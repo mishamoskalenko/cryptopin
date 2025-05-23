@@ -1,19 +1,19 @@
 import React from 'react'
 import "./product.scss"
 import investImage from "../../../images/invest.svg";
+import { Link } from 'react-router-dom';
 
 function Product() {
     return (
         <section className='product wrapper'>
             <div className='product__sub product-sub'>
-                <p className='product-sub__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt<br></br>ut labore et dolore magna
-                    aliqua ut dolor sit</p>
-                <button className='product-sub__button'>Get Started</button>
+                <p className='product-sub__description'>Take control of your financial future with our comprehensive investment platform. Choose from a wide range of options.</p>
+                <Link className='product-sub__button' to={`/about`}>Get Started</Link>
             </div>
             <div className='product__stock stock'>
                 <div className='stock__text'>
                     <h2 className='stock__header'>Your Money...Your Choice</h2>
-                    <p className='stock__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do<br></br>eiusmod tempor incididunt </p>
+                    <p className='stock__description'>Diversify your portfolio with our extensive selections.</p>
                 </div>
                 <div className='stock__buttons stock-buttons'>
                     <ul className='stock-buttons__list stock-list'>
@@ -49,9 +49,9 @@ function Product() {
                     </div>
                     <div className='invest__text invest-text'>
                         <p className='invest-text__subtitle'>Invest in everything</p>
-                            <p className='invest-text__rate'><b className='invest-text__percent'>6.7%</b>Intrest Rate</p>
-                        <p className='invest-text__description'>Proactively envisioned multimedia based expertise and<br></br>cross-media growth strategies. Seamlessly visualize<br></br>quality intellectual capital without superior.</p>
-                        <button className='invest-text__button'>Creat Account For Free</button>
+                        <p className='invest-text__rate'><b className='invest-text__percent'>6.7%</b>Intrest Rate</p>
+                        <p className='invest-text__description'>Access a diverse range of investment opportunities with our platform. From stocks and crypto to fixed deposits, we provide the tools and insights you need to build a robust investment portfolio.</p>
+                        <Link className='invest-text__button' to={`/login`}>Creat Account For Free</Link>
                     </div>
                 </div>
             </div>

@@ -19,8 +19,8 @@ function Banner() {
             <div className='wrapper'>
                 <div className='banner__info'>Updated on {formattedDate}</div>
                 <h1 className='banner__header'>Build Wealth <b className='banner__header--auto'>Automatically</b> With Crypto</h1>
-                <p className='banner__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
-                <Link className='banner__button' to={`/token`}>Get Started</Link>
+                <p className='banner__description'>Start your journey to financial freedom with our automated crypto investment platform. We make cryptocurrency investing simple, secure, and accessible for everyone.</p>
+                <Link className='banner__button' to={`/about`}>Get Started</Link>
             </div>
             <div className='banner__wrapper'>
                 <img className="banner__image" src={bannerImage} alt="" />

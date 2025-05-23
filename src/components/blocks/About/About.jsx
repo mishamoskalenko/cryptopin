@@ -4,6 +4,7 @@ import chart2 from "../../../images/chart-2.svg"
 import chart3 from "../../../images/chart-3.svg"
 import chart4 from "../../../images/chart-4.svg"
 import "./about.scss"
+import { Link } from 'react-router-dom'
 
 
 function About() {
@@ -12,12 +13,12 @@ function About() {
             <div className='about__wrapper wrapper'>
                 <div className='about__text'>
                     <h2 className='about__header'>Explore endless possibilities with <b className='about__header--cryptop'>Cryptop</b></h2>
-                    <p className='about__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                    <p className='about__description'>Discover the future of cryptocurrency investing with our cutting-edge platform. Access real-time market data, automated trading strategies, and expert insights to maximize your investment potential.</p>
                     <ul className='about__list about-list'>
                         <li className='about-list__item about-list__item--support'>24/7 Support</li>
                         <li className='about-list__item about-list__item--secured'>99% Secured</li>
                     </ul>
-                    <button className='about__button'>Get Started</button>
+                    <Link to="/token" className='about__button'>Get Started</Link>
                 </div>
                 <div className='about__chart chart'>
                     <ul className='chart__buttons chart-buttons'>

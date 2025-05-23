@@ -13,12 +13,12 @@ function Header() {
     return (
         <header className='header'>
             <div className='header__banner header-banner'>
-                <p className='header-banner__text'>Buy & Sell Bitcoin, Ethereum and 100+ cryptos in minutes. Register now & get ₹100 cashback on your first trade of ₹500 or more!</p>
+                <p className='header-banner__text'>Buy & Sell Bitcoin, Ethereum and 100+ cryptos in minutes. Register now & get 100$ cashback on your first trade of 500$ or more!</p>
             </div>
             <nav className='header__nav nav wrapper'>
                 <img className='header__logo' src={logo} alt="" />
                 <button onClick={toggleNav} className={`nav__button ${isNavOpen ? "nav__button--opened" : "nav__button--closed"}`}>
-                    <span class="visually-hidden">Open menu</span>
+                    <span className="visually-hidden">Open menu</span>
                 </button>
                 <ul className={`nav__list nav-list ${isNavOpen ? "nav__list--opened" : "nav__list--closed"}`}>
                     <li className='nav-list__item'>

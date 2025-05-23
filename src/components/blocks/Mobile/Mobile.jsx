@@ -11,7 +11,7 @@ function Mobile() {
             <div className='mobile__wrapper wrapper'>
                 <div className='mobile__text'>
                     <h2 className='mobile__header'>Try The Future, Today. Download <b className='mobile__header--cryptop'>Cryptop</b></h2>
-                    <p className='mobile__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                    <p className='mobile__description'>Manage your crypto portfolio on the go with our powerful mobile app. Get real-time market updates, execute trades instantly, and monitor your investments from anywhere in the world.</p>
                     <div className='mobile__scan'>
                         <div className='mobile__qr mobile-qr'>
                             <img src={qrcodeImage} alt="" />

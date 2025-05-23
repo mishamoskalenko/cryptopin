@@ -32,6 +32,12 @@ function TokenList() {
 
     useEffect(() => {
         fetchToken();
+
+        const interval = setInterval(() => {
+            fetchToken();
+        }, 10000);
+
+        return () => clearInterval(interval);
     }, [])
 
     const changeColor = (change) => {

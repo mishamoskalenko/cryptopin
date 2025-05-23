@@ -88,6 +88,10 @@
     }
 }
 
+.nav-list__link:hover{
+    opacity: 0.7;
+}
+
 .nav__list--opened{
     @media (max-width: 767px) {
         display: flex;
@@ -139,49 +143,49 @@
     position: relative;
 }
 
-.nav-list__arrow:nth-child(2)::before{
-    content: "";
-    position: absolute;
-    background-image: url(../../../images/nav-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;
-    width: 24px;
-    height: 24px;
-    top: 12px;
-    left: 135px;
-    @media (max-width: 767px) {
-        display: none;
-    }
-    @media (max-width: 1399px) {
-        left: 105px;
-    }
-    @media (min-width: 1400px) {
-        left: 135px;
-    }
-}
+// .nav-list__arrow:nth-child(2)::before{
+//     content: "";
+//     position: absolute;
+//     background-image: url(../../../images/nav-arrow.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     z-index: 10;
+//     width: 24px;
+//     height: 24px;
+//     top: 12px;
+//     left: 135px;
+//     @media (max-width: 767px) {
+//         display: none;
+//     }
+//     @media (max-width: 1399px) {
+//         left: 105px;
+//     }
+//     @media (min-width: 1400px) {
+//         left: 135px;
+//     }
+// }
 
-.nav-list__arrow:nth-child(3)::before{
-    content: "";
-    position: absolute;
-    background-image: url(../../../images/nav-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;
-    width: 24px;
-    height: 24px;
-    top: 12px;
-    left: 231px;
-    @media (max-width: 767px) {
-        display: none;
-    }
-    @media (max-width: 1399px) {
-        left: 173px;
-    }
-    @media (min-width: 1400px) {
-        left: 232px;
-    }
-}
+// .nav-list__arrow:nth-child(3)::before{
+//     content: "";
+//     position: absolute;
+//     background-image: url(../../../images/nav-arrow.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     z-index: 10;
+//     width: 24px;
+//     height: 24px;
+//     top: 12px;
+//     left: 231px;
+//     @media (max-width: 767px) {
+//         display: none;
+//     }
+//     @media (max-width: 1399px) {
+//         left: 173px;
+//     }
+//     @media (min-width: 1400px) {
+//         left: 232px;
+//     }
+// }
 
 .nav__button{
     width: 40px;

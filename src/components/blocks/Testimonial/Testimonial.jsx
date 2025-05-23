@@ -12,7 +12,7 @@ function Testimonial() {
         <section className='testimonial wrapper'>
             <div className='testimonial__text testimonial-text'>
                 <h2 className='testimonial-text__header'>What Our Clients Say <b className='testimonial-text__header--about'>About</b> us</h2>
-                <p className='testimonial-text__description'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                <p className='testimonial-text__description'>Join thousands of satisfied users who have transformed their crypto investment journey with our platform. Read what our community has to say about their experience with Cryptop.</p>
             </div>
             <div className='testimonial__list'>
                 <ul className='testimonial-list'>
