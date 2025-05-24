@@ -80,6 +80,11 @@
     cursor: pointer;
 }
 
+.login__button:hover{
+    background: #1b2124;
+}
+
+
 .login__wrapper{
     @media (min-width: 1400px) {
         width: 697px;

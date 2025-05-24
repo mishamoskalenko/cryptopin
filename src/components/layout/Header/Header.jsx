@@ -16,7 +16,9 @@ function Header() {
                 <p className='header-banner__text'>Buy & Sell Bitcoin, Ethereum and 100+ cryptos in minutes. Register now & get 100$ cashback on your first trade of 500$ or more!</p>
             </div>
             <nav className='header__nav nav wrapper'>
-                <img className='header__logo' src={logo} alt="" />
+                <Link to={'/'}>
+                    <img className='header__logo' src={logo} alt="logo" />
+                </Link>
                 <button onClick={toggleNav} className={`nav__button ${isNavOpen ? "nav__button--opened" : "nav__button--closed"}`}>
                     <span className="visually-hidden">Open menu</span>
                 </button>

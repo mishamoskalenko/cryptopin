@@ -21,8 +21,12 @@ function Mobile() {
                             </div>
                         </div>
                         <div className='mobile__os'>
-                            <img src={iosImage} alt="" />
-                            <img src={androidImage} alt="" />
+                            <a href="https://www.apple.com/app-store/" target='_blank' rel="noreferrer">
+                                <img src={iosImage} alt="ios app" />
+                            </a>
+                            <a href="https://play.google.com/store/games?hl=en" target='_blank' rel="noreferrer">
+                                <img src={androidImage} alt="android app" />
+                            </a>
                         </div>
                     </div>
                 </div>
