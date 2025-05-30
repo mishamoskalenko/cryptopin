@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cryptopin/static/css/main.6086c832.css",
-    "main.js": "/cryptopin/static/js/main.9de36136.js",
+    "main.css": "/cryptopin/static/css/main.3a65e01c.css",
+    "main.js": "/cryptopin/static/js/main.99f42fbf.js",
     "static/media/newslatter-background.png": "/cryptopin/static/media/newslatter-background.651d0cf11d2a48e859f1.png",
     "static/media/product-background.png": "/cryptopin/static/media/product-background.c6062908c0ea3e9dda18.png",
     "static/media/token-2.svg": "/cryptopin/static/media/token-2.dc770cf9a30afb7ed9ba.svg",
@@ -46,6 +46,7 @@
     "static/media/client-1.svg": "/cryptopin/static/media/client-1.e78eab5508f16f3e02c688157268900a.svg",
     "static/media/client-6.svg": "/cryptopin/static/media/client-6.cd9f28b5a4a6cc9667528a78543bab85.svg",
     "static/media/client-10.svg": "/cryptopin/static/media/client-10.5ca6bfffca9f4cf1550a295737008097.svg",
+    "static/media/reddit.svg": "/cryptopin/static/media/reddit.8f459f4c68853f6cdf1fd318a216cac4.svg",
     "static/media/client-5.svg": "/cryptopin/static/media/client-5.a894acb7c0375bf447fe9e6b35659489.svg",
     "static/media/whyus-4.svg": "/cryptopin/static/media/whyus-4.649f73ffd84d37a5b077de726ca3453c.svg",
     "static/media/whyus-background-4.svg": "/cryptopin/static/media/whyus-background-4.775fbd9f05386968954c.svg",
@@ -55,6 +56,7 @@
     "static/media/mobile-android.svg": "/cryptopin/static/media/mobile-android.33db6128c708c1c8ab91093b1392e7b3.svg",
     "static/media/client-4.svg": "/cryptopin/static/media/client-4.bb5df42f9ea26a12a88a6c21bc82e899.svg",
     "static/media/stock-2.svg": "/cryptopin/static/media/stock-2.223ca5ac39cb7111c64c.svg",
+    "static/media/instagram.svg": "/cryptopin/static/media/instagram.eafed1a366a941265f27d738cf0815d0.svg",
     "static/media/whyus-background-3.svg": "/cryptopin/static/media/whyus-background-3.0881bc70e1e0323f4a16.svg",
     "static/media/whyus-3.svg": "/cryptopin/static/media/whyus-3.0270d1b59be3687b6d69371ee8503e15.svg",
     "static/media/mobile-ios.svg": "/cryptopin/static/media/mobile-ios.457dee2529b468adabb2b521bfb37df4.svg",
@@ -62,13 +64,17 @@
     "static/media/whyus-1.svg": "/cryptopin/static/media/whyus-1.c370441a78ea6bae6d221de6d886c19e.svg",
     "static/media/content-2.svg": "/cryptopin/static/media/content-2.06b0d2c7eabf27ca66c3.svg",
     "static/media/content-3.svg": "/cryptopin/static/media/content-3.103815484925471d7c0c.svg",
+    "static/media/twitter.svg": "/cryptopin/static/media/twitter.0565697bcdba27a82501ec108d3b129d.svg",
+    "static/media/linkedin.svg": "/cryptopin/static/media/linkedin.0965ab6ffd9ea1844159b03ca04a576b.svg",
     "static/media/stock-3.svg": "/cryptopin/static/media/stock-3.0a315601a02118e3f468.svg",
     "static/media/whyus-background-5.svg": "/cryptopin/static/media/whyus-background-5.93e94e5280f63d941318.svg",
     "static/media/whyus-6.svg": "/cryptopin/static/media/whyus-6.ad82cc8d6106f5a94053292e47de279a.svg",
     "static/media/chart-4.svg": "/cryptopin/static/media/chart-4.56324a8f21d5f15eb3de0ea0c7c441b9.svg",
     "static/media/whyus-5.svg": "/cryptopin/static/media/whyus-5.8c587ac195b4c1e9389a9941f971fa46.svg",
+    "static/media/youtube.svg": "/cryptopin/static/media/youtube.4ab1f48336fe5fa0f5f7b6eb01d92dd2.svg",
     "index.html": "/cryptopin/index.html",
     "static/media/stock-1.svg": "/cryptopin/static/media/stock-1.f2ea7c94c4414466369a.svg",
+    "static/media/facebook.svg": "/cryptopin/static/media/facebook.774e91bc4a32b82ed60830cc806b2c6f.svg",
     "static/media/secure.svg": "/cryptopin/static/media/secure.f3fa9d4cea0ca0b85929.svg",
     "static/media/whyus-background-2.svg": "/cryptopin/static/media/whyus-background-2.123f1cd78bc6ab8f3952.svg",
     "static/media/close.svg": "/cryptopin/static/media/close.6430a848ecf80c96256c.svg",
@@ -82,11 +88,11 @@
     "static/media/banner-line.svg": "/cryptopin/static/media/banner-line.43fa08f56468b4526478.svg",
     "static/media/invest-line.svg": "/cryptopin/static/media/invest-line.2e10f1815373943d6635.svg",
     "static/media/chart-line.svg": "/cryptopin/static/media/chart-line.9d5f7e0425fc4cfb16c3.svg",
-    "main.6086c832.css.map": "/cryptopin/static/css/main.6086c832.css.map",
-    "main.9de36136.js.map": "/cryptopin/static/js/main.9de36136.js.map"
+    "main.3a65e01c.css.map": "/cryptopin/static/css/main.3a65e01c.css.map",
+    "main.99f42fbf.js.map": "/cryptopin/static/js/main.99f42fbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.6086c832.css",
-    "static/js/main.9de36136.js"
+    "static/css/main.3a65e01c.css",
+    "static/js/main.99f42fbf.js"
   ]
 }
