@@ -1,4 +1,3 @@
-import React from 'react'
 import './tokenitem.scss'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +17,9 @@ function TokenItem(props) {
                 <li className={`tokenitem-item tokenitem-item__change ${props.changeColor}`}>{props.change}</li>
                 <li className='tokenitem-item tokenitem-item__volume'>{props.volume}</li>
                 <li className='tokenitem-item tokenitem-item__cap'>{props.cap}</li>
-                <li className='tokenitem-item tokenitem-item__detail'><Link className='tokenitem-item__detail' to={`/token/${props.id}`}>Detail</Link></li>
+                <li className='tokenitem-item tokenitem-item__detail'>
+                    <Link className='tokenitem-item__detail' to={`/token/${props.id}`} target='_blank'>Detail</Link>
+                </li>
             </ul>
         </div>
     )

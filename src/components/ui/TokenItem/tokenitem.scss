@@ -1,6 +1,6 @@
 .tokenitem-list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 76px;
+    grid-template-columns: 240px 1fr 1fr 1fr 1fr 76px;
     align-items: center;
     padding: 19px 54px;
     @media (max-width: 1699px) {
@@ -39,6 +39,7 @@
     margin-right: 13px;
     width: 30px;
     height: 30px;
+    object-fit: cover; 
 }
 
 .tokenitem-item__title{
@@ -60,6 +61,11 @@
     font-weight: 500;
     line-height: 160%;
     text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;  
+    margin-top: 3px;
     @media (max-width: 767px) {
         display: none;
     }
