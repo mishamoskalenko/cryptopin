@@ -1,10 +1,11 @@
+import React from 'react'
 import './tokenitem.scss'
 import { Link } from 'react-router-dom'
 
 
 function TokenItem(props) {
     return (
-        <div className="tokenitem">
+        <div className="tokenitem" style={props.style}>
             <ul className='tokenitem__list tokenitem-list'>
                 <div className='tokenitem-list__name'>
                     <li className='tokenitem-item tokenitem-item__image'>
@@ -25,4 +26,4 @@ function TokenItem(props) {
     )
 }
 
-export default TokenItem
+export default React.memo(TokenItem)

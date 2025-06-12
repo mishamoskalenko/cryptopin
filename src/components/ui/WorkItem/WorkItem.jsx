@@ -11,4 +11,4 @@ function WorkItem(props) {
     )
 }
 
-export default WorkItem
+export default React.memo(WorkItem)

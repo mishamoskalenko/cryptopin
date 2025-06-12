@@ -21,4 +21,4 @@ function SkeletonTokenItem() {
     )
 }
 
-export default SkeletonTokenItem
+export default React.memo(SkeletonTokenItem)

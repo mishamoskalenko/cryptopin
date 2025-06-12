@@ -13,7 +13,7 @@ function Work() {
             <ul className='work__list work-list'>
                 <WorkItem
                     header="More than a typical crypto wallet"
-                    description="Lorem ipsum dolor sit amet consect eturadipiscing eiusmod"
+                    description="Securely manage your assets, trade with low fees, and explore DeFi opportunities all in one place."
                     link="Read more"
                     image={work1}
                     class={"work-list__item work-item work-item--2"}
@@ -21,12 +21,12 @@ function Work() {
                 <li className='work-list__item work-item work-item--2'>
                     <img className='work-item__image work-item__image--2' src={work2} alt="" width={339.153} height={337.478} />
                     <h3 className='work-item__header work-item__header--2'>Grow your business with Binance Pay</h3>
-                    <p className='work-item__description'>Lorem ipsum dolor sit amet consect eturadipiscing eiusmod</p>
+                    <p className='work-item__description'>Accept crypto payments from millions of Binance users worldwide, with fast and secure transactions.</p>
                     <a className='work-item__link work-item__link--2' href="#">Read more</a>
                 </li>
                 <WorkItem
                     header="A crypto wallet from the future"
-                    description="Lorem ipsum dolor sit amet consect eturadipiscing eiusmod"
+                    description="Experience the next generation of crypto wallets with advanced security features and seamless integration with Web3 applications."
                     link="Read more"
                     image={work3}
                     class={"work-list__item work-item work-item--3"}

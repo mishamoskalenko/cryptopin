@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { FixedSizeList as List } from 'react-window';
 import TokenItem from '../TokenItem/TokenItem'
 import './tokenlist.scss'
 import SkeletonTokenItem from '../SkeletonTokenItem/SkeletonTokenItem';
@@ -22,10 +23,11 @@ function TokenList() {
                 const data = response.data
                 setTokens(data);
                 setIsLoading(false);
+                setIsError(false);
             })
             .catch(error => {
                 console.error(error);
-                setIsLoading(true);
+                setIsLoading(false);
                 setIsError(true);
             });
     }
@@ -53,7 +55,7 @@ function TokenList() {
         }
     }
 
-    const SkeletonToken = Array.from({ length: 100 }, (_, index) => index);
+    const SkeletonToken = Array.from({ length: 20 }, (_, index) => index);
 
     if (isError) {
         return (
@@ -61,29 +63,44 @@ function TokenList() {
         );
     }
 
+    if (isLoading && tokens.length === 0) {
+        return (
+            <>
+                {SkeletonToken.map((_, index) => (
+                    <SkeletonTokenItem key={index} />
+                ))}
+            </>
+        )
+    }
+
+    const Row = ({ index, style }) => {
+        const token = tokens[index];
+        return (
+            <TokenItem
+                style={style}
+                id={token.id}
+                key={token.id}
+                image={token.image}
+                title={token.symbol.toUpperCase()}
+                description={`(${token.name})`}
+                price={`$${parseFloat(token.current_price).toFixed(2)}`}
+                change={`${parseFloat(token.price_change_percentage_24h).toFixed(2)}%`}
+                volume={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.total_volume))}`}
+                cap={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.market_cap))}`}
+                changeColor={changeColor(token.price_change_percentage_24h)}
+            />
+        );
+    };
+
     return (
-        <>
-            {isLoading ? (
-                SkeletonToken.map((token) => (
-                    <SkeletonTokenItem key={token} />
-                ))
-            ) : (
-                tokens.map(token => (
-                    <TokenItem
-                        id={token.id}
-                        key={token.id}
-                        image={token.image}
-                        title={token.symbol.toUpperCase()}
-                        description={`(${token.name})`}
-                        price={`$${parseFloat(token.current_price).toFixed(2)}`}
-                        change={`${parseFloat(token.price_change_percentage_24h).toFixed(2)}%`}
-                        volume={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.total_volume))}`}
-                        cap={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.market_cap))}`}
-                        changeColor={changeColor(token.price_change_percentage_24h)}
-                    />
-                ))
-            )}
-        </>
+        <List
+            height={800}
+            itemCount={tokens.length}
+            itemSize={80}
+            width={'100%'}
+        >
+            {Row}
+        </List>
     );
 }
 
