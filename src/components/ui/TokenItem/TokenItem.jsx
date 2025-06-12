@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 
 
 function TokenItem(props) {
+    const itemClassName = `tokenitem ${props.isEven ? 'tokenitem--even' : ''}`;
+
     return (
-        <div className="tokenitem" style={props.style}>
+        <div className={itemClassName} style={props.style}>
             <ul className='tokenitem__list tokenitem-list'>
                 <div className='tokenitem-list__name'>
                     <li className='tokenitem-item tokenitem-item__image'>

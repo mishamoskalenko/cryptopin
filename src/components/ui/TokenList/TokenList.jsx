@@ -9,7 +9,7 @@ const API_URL = 'https://api.coingecko.com/api/v3/coins/markets';
 
 function TokenList() {
     const [tokens, setTokens] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [isError, setIsError] = useState(false)
 
     function fetchToken() {
@@ -67,7 +67,7 @@ function TokenList() {
         return (
             <>
                 {SkeletonToken.map((_, index) => (
-                    <SkeletonTokenItem key={index} />
+                    <SkeletonTokenItem key={index} isEven={index % 2 === 0} />
                 ))}
             </>
         )
@@ -78,6 +78,7 @@ function TokenList() {
         return (
             <TokenItem
                 style={style}
+                isEven={index % 2 === 0}
                 id={token.id}
                 key={token.id}
                 image={token.image}
@@ -94,6 +95,7 @@ function TokenList() {
 
     return (
         <List
+            className='token-list-container'
             height={800}
             itemCount={tokens.length}
             itemSize={80}

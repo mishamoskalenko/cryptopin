@@ -12,18 +12,18 @@
     }
 }
 
-.tokenitem:nth-child(1n){
-    background: #F5F5F5;
-}
-
-.tokenitem:nth-child(2n){
+.tokenitem {
     background: #FAFAFA;
 }
 
-.tokenitem:last-child{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+.tokenitem--even {
+    background: #F5F5F5;
 }
+
+// .tokenitem:last-child{
+//     border-bottom-left-radius: 30px;
+//     border-bottom-right-radius: 30px;
+// }
 
 
 .tokenitem-item{
