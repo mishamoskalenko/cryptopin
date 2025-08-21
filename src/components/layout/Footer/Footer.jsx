@@ -103,7 +103,7 @@ function Footer() {
                     <p className='footer-list__disclaimer'><b className='footer-list__disclaimer--bold'>Disclaimer</b>: Trading in Cryptocurrencies Are Subject To Market, Technical And Legal Risks.The Prices Fluctuate Based On Local Demand And Supply</p>
                 </ul>
             </div>
-            <p className='footer__copyright'>Copyright © Cryptop | Designed by VictorFlow Templates - Powered by Webflow</p>
+            <p className='footer__copyright'>Copyright © Cryptop</p>
         </footer>
     )
 }
