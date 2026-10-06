@@ -43,11 +43,14 @@ function TokenList() {
     }, [])
 
     const changeColor = (change) => {
-        change = change.toFixed(2)
-        if (change > 0) {
+        if (change === null || change === undefined || isNaN(change)) {
+            return 'tokenitem-item__change--neutral';
+        }
+        const numericChange = Number(Number(change).toFixed(2));
+        if (numericChange > 0) {
             return 'tokenitem-item__change--positive';
         }
-        else if (change < 0) {
+        else if (numericChange < 0) {
             return 'tokenitem-item__change--negative';
         }
         else {
@@ -75,6 +78,24 @@ function TokenList() {
 
     const Row = ({ index, style }) => {
         const token = tokens[index];
+        if (!token) return null;
+
+        const price = token.current_price != null && !isNaN(token.current_price)
+            ? `$${parseFloat(token.current_price).toFixed(2)}`
+            : '$0.00';
+
+        const change = token.price_change_percentage_24h != null && !isNaN(token.price_change_percentage_24h)
+            ? `${parseFloat(token.price_change_percentage_24h).toFixed(2)}%`
+            : '0.00%';
+
+        const volume = token.total_volume != null && !isNaN(token.total_volume)
+            ? `$${new Intl.NumberFormat('de-DE').format(parseFloat(token.total_volume))}`
+            : '$0';
+
+        const cap = token.market_cap != null && !isNaN(token.market_cap)
+            ? `$${new Intl.NumberFormat('de-DE').format(parseFloat(token.market_cap))}`
+            : '$0';
+
         return (
             <TokenItem
                 style={style}
@@ -82,12 +103,12 @@ function TokenList() {
                 id={token.id}
                 key={token.id}
                 image={token.image}
-                title={token.symbol.toUpperCase()}
-                description={`(${token.name})`}
-                price={`$${parseFloat(token.current_price).toFixed(2)}`}
-                change={`${parseFloat(token.price_change_percentage_24h).toFixed(2)}%`}
-                volume={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.total_volume))}`}
-                cap={`$${new Intl.NumberFormat('de-DE').format(parseFloat(token.market_cap))}`}
+                title={(token.symbol || '').toUpperCase()}
+                description={`(${token.name || ''})`}
+                price={price}
+                change={change}
+                volume={volume}
+                cap={cap}
                 changeColor={changeColor(token.price_change_percentage_24h)}
             />
         );
